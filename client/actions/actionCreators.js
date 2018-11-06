@@ -1,4 +1,4 @@
-// increment Likes
+// increment
 export const increment = (index) => {
   return {
     type: 'INCREMENT_LIKES',
@@ -6,8 +6,7 @@ export const increment = (index) => {
   }
 }
 
-// add comments
-
+// add comment
 export const addComment = (postId, author, comment) => {
   return {
     type: 'ADD_COMMENT',
@@ -16,12 +15,13 @@ export const addComment = (postId, author, comment) => {
     comment
   }
 }
+
 // remove comment
 
-export const removeComment = (postId, id) => {
+export const removeComment = (postId, i) => {
   return {
     type: 'REMOVE_COMMENT',
-    postId,
-    id
+    i,
+    postId
   }
 }
